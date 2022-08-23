@@ -1,1 +1,17 @@
 // Here we will place all the variables, mixins reset stiles, etc.
+
+// Create the variables in here
+$color-dark: #262626;
+$color-black: #000;
+
+// Get rid of all the pre-defined margins
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// define background color for elements
+body{
+    // Assign the variable
+    background-color: $color-dark;
+}
