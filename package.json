@@ -1,0 +1,19 @@
+{
+  "name": "georgia-restaurant",
+  "version": "1.0.0",
+  "description": "tested",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANDRESPLASENCIABORJA/Georgia-Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ANDRESPLASENCIABORJA/Georgia-Restaurant/issues"
+  },
+  "homepage": "https://github.com/ANDRESPLASENCIABORJA/Georgia-Restaurant#readme"
+}
