@@ -1,3 +1,3 @@
-# gift-app
+# GEORGIA-RESTAURANT
 
 tested
