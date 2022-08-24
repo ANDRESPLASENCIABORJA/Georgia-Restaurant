@@ -1,12 +1,29 @@
 // Styles regarding layout and also the ones that wont be reusable
 
 // header
-.header{
-    // full width available on the page
-    width: 100%;
-    // 100% of view width
-    height: 100vh;
-    // Background image styles
-    background: linear-gradient(rgba($color-black, .8),rgba($color-black, .6)), url(../images/bg.jpeg) center no-repeat;
-    background-size: cover;
+.header {
+  // full width available on the page
+  width: 100%;
+  // 100% of view width
+  height: 100vh;
+  // manage layout based on the parent element header
+  position: relative;
+  // Background image styles
+  background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)),
+    url(../images/bg.jpeg) center no-repeat;
+  background-size: cover;
+
+  // child element of header use nesting
+  // we are going to center the brand horizontally
+  .brand {
+    display: flex;
+    align-items: center;
+    @include centering(15%);
+  }
+
+  // & indicates artnt element
+  &-banner {
+    text-align: center;
+    @include centering(50%);
+  }
 }

@@ -3,15 +3,44 @@
 // Create the variables in here
 $color-dark: #262626;
 $color-black: #000;
+$color-primary: #d3ab55;
+$color-secondary: #bbb;
+
+$font-dancingScript: 'Dancing Script', cursive;
+$font-josefinSans: 'Josefin Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+
+// Create a mixin of the flexbox properties that we used on logo because we are going to reuse them on the project
+@mixin flexlayout {
+  // Link element is an inline element so we can't assign to it with and height, to manage that we are going to make it as a block element
+  // To center the item on link element that is a circle instead of block we use flexbox
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin textStyles {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@mixin centering($topValue) {
+    position: absolute;
+    top: $topValue;
+    left: 50%;
+    // place element in the center
+    transform: translate(-50%, -50%);
+}
 
 // Get rid of all the pre-defined margins
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 // define background color for elements
-body{
-    // Assign the variable
-    background-color: $color-dark;
+body {
+  // Assign the variable
+  background-color: $color-dark;
 }
