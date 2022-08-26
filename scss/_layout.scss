@@ -27,3 +27,58 @@
     @include centering(50%);
   }
 }
+
+// Style About us elements
+
+.about-us {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+
+  &-left {
+    width: 40%;
+    position: relative;
+    left: -200px;
+
+
+    img {
+      width: 100%;
+      opacity: .7;
+    }
+  }
+
+  &-right {
+    width: 60%;
+    display: flex;
+    // Place elements vertically
+    flex-direction: column;
+    // Center elements horizontally
+    align-items: center;
+    padding: 0 100px;
+    // Prevents increase of box
+    // This might be a responsive issue
+    box-sizing: border-box;
+
+    .stars {
+        margin: 30px 0;
+    }
+
+    .star {
+        font-size: 15px;
+        color: $color-primary;
+        margin-left: 10px;
+    }
+
+    .description {
+        font-family: $font-josefinSans;
+        font-size: 25px;
+        font-style: italic;
+        color: $color-secondary;
+        text-align: justify;
+
+        &::first-letter {
+            padding-left: 50px;
+        }
+    }
+  }
+}
